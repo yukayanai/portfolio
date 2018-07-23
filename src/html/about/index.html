@@ -102,62 +102,30 @@
 				</section>
 				<!-- About Section End -->
 
+
 				<!-- Testimonial Section -->
 				<div class="section-block testimonial-5 testimonials-5-about-1">
 					<div id="testimonial-slider-1" class="testimonial-slider tm-slider-container">
 						<ul class="tms-slides">
-							<li class="tms-slide" data-image>
-								<div class="tms-content-scalable">
-									<div class="row">
-										<div class="column width-12">
-											<blockquote class="center large">
-												<p>Yuka is very thoughtful and a very good communicator, producing high quality designs efficiently, resulting in satisfied customers for our company. She takes the time to understand the requirements and translates this into a usable interface or design specific and well suited for the purpose.
-													<cite>Matt Bodley</cite>
-												</p>
-											</blockquote>
+							<!-- See testimonals in html/data/global.json -->
+							{% for testimonalItem in testimonals %}
+								<li class="tms-slide" data-image>
+										<div class="tms-content-scalable">
+											<div class="row">
+												<div class="column width-12">
+													<blockquote class="center large">
+														<p>{{testimonalItem.testimonal}}
+															<cite>{{testimonalItem.cite}}</cite>
+														</p>
+													</blockquote>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-							</li>
-							<li class="tms-slide" data-image>
-								<div class="tms-content-scalable">
-									<div class="row">
-										<div class="column width-12">
-											<blockquote class="center large">
-												<p>Yuka is an incredibly talented graphic designer and she was a pleasure to work with. Yuka creates seamless designs and was always willing to go over and above the call of duty in order to meet deadlines. She would be an absolute asset to any design team.
-													<cite>Tayte Hampton</cite>
-												</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="tms-slide" data-image>
-								<div class="tms-content-scalable">
-									<div class="row">
-										<div class="column width-12">
-											<blockquote class="center large">
-												<p>Yuka possessed a unique combination of great design skills, attention to detail and hard work ethic. I found Yuka to be a very valuable asset on our team at Agentbox. I did not hesitate to recommend Yuka for a new project we were undertaking at BRR Media. I would highly recommend Yuka, be it for a permanent role or as a freelancer.
-													<cite>Rowan Pronk</cite>
-												</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="tms-slide" data-image>
-								<div class="tms-content-scalable">
-									<div class="row">
-										<div class="column width-12">
-											<blockquote class="center large">
-												<p>Yuka is one of the most talented designers I have had the privilege to work with. She is a great asset to any team. She brings many things to the table. Her design skills, communication and openness to solving problems are all valuable traits. I would strongly recommend her as an exceptionally talented designer.
-													<cite>Andrew Brown</cite>
-												</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</li>
+									</li>
+							{% else %}
+							<!-- This would display if the 'item' collection were empty -->
+								<li>Ops</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
