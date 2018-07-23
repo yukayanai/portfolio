@@ -1,39 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
-	<!-- Facebook OP meta -->
-	<meta property="og:title" content="Yuka Yanai | UI / UX Designer" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://www.yukayanai.com" />
-	<meta property="og:image" content="http://yukayanai.com/images/nanairo.jpg" />
-	<meta property="og:image:width" content="590" />
-	<meta property="og:image:height" content="440" />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:description" content="UI / UX Designer" />
-	<meta name="twitter:title" content="Yuka Yanai | UI / UX Designer" />
-	<meta name="twitter:site" content="@yuka_yanai" />
-	<meta name="twitter:creator" content="@yuka_yanai" />
-
-	<title>Yuka Yanai | UI / UX Designer</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-	<!-- Font -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700' rel='stylesheet' type='text/css'>
-
-	<!-- Css -->
-	<link rel="stylesheet" href="../../css/core.min.css" />
-	<link rel="stylesheet" href="../../css/skin.css" />
-	<link rel="stylesheet" href="../../css/avalanche.css" />
-	<link rel="stylesheet" href="../../css/summit.css" />
-	<link rel="stylesheet" href="../../css/icons.css" />
-
-	<!--[if lt IE 9]>
-    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+	{% include "_partials/head.html" %}	
 </head>
 
 <body class="ebgames">
@@ -57,10 +25,10 @@
 							<nav class="overlay-navigation pull-left clear-float-on-mobile">
 								<ul>
 									<li>
-										<a href="../../">Home</a>
+										<a href="/">Home</a>
 									</li>
 									<li>
-										<a href="../../about">About</a>
+										<a href="/about">About</a>
 									</li>
 								</ul>
 							</nav>
@@ -87,8 +55,8 @@
 						<div class="column width-12 nav-bar-inner">
 							<div class="logo">
 								<div class="logo-inner">
-									<a href="../../"><img src="../../images/logo-dark.png" alt="Nanairo Logo" /></a>
-									<a href="../../"><img src="../../images/logo.png" alt="Nanairo Logo" /></a>
+									<a href="/"><img src="/images/logo-dark.png" alt="Nanairo Logo" /></a>
+									<a href="/"><img src="/images/logo.png" alt="Nanairo Logo" /></a>
 								</div>
 							</div>
 							<nav class="navigation nav-block secondary-navigation nav-right">
@@ -104,10 +72,10 @@
 							<nav class="navigation nav-block primary-navigation nav-right">
 								<ul>
 									<li>
-										<a href="../../">Home</a>
+										<a href="/">Home</a>
 									</li>
 									<li>
-										<a href="../../about">About</a>
+										<a href="/about">About</a>
 									</li>
 								</ul>
 							</nav>
@@ -146,7 +114,7 @@
 										</div>
 									</div>
 								</div>
-								<img data-src="../../images/portfolio/ebgames/feature-fs.jpg" data-retina src="images/blank.png" alt=""/>
+								<img data-src="/images/portfolio/ebgames/feature-fs.jpg" data-retina src="/images/blank.png" alt=""/>
 							</li>
 						</ul>
 					</div>
@@ -186,7 +154,7 @@
 							&#8729; &nbsp;&nbsp;Reduce Dev Support</p>
 						</div>
 						<div class="column width-8">
-							<img src="../../images/portfolio/ebgames/ebgamesmpcui.png" alt=""/>
+							<img src="/images/portfolio/ebgames/ebgamesmpcui.png" alt=""/>
 						</div>
 					</div>
 					
@@ -206,13 +174,13 @@
 					<div class="row mb-40">
 						<div class="column width-12 center color-white mb-40">
 							<h4 class="mb-60">UX Research - Customer journey mapping and identify problems with the current EB Games and Zing websites</h4>
-							<img src="../../images/portfolio/ebgames/customerjourney.png" alt=""/>
+							<img src="/images/portfolio/ebgames/customerjourney.png" alt=""/>
 						</div>
 					</div>
 
 					<div class="row mb-40">
 						<h4 class="color-white center mb-60">Design vision - what could the solution be?</h4>
-						<img src="../../images/portfolio/ebgames/ebgamesui.png" alt=""/>
+						<img src="/images/portfolio/ebgames/ebgamesui.png" alt=""/>
 					</div>
 				</div>
 				
@@ -234,59 +202,16 @@
 			</div>
 			<!-- Content End -->
 
-			<!-- Footer -->
-			<footer class="footer">
-				<div class="footer-top">
-					<div class="row flex">
-						<div class="column width-6">
-							<div class="widget">
-								<img src="../../images/logo-footer.png" alt="Nanairo Logo" />
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="widget">
-								<p><a class="contact-me pull-right" href="mailto:hello@nanairodesigns.com">Get in touch</a></p>
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="widget">
-								<p>Hi there! I'm Yuka, a UI / UX Designer based in Brisbane with over 6 years experience. I have a passion for creating simple, clean and user friendly interfaces and constantly improve the experience and achieve users goals.</p>
-							</div>
-						</div>
-						<div class="column width-6">
-							<div class="widget">
-								<p class="right">Brisbane, Australia &copy; <script>document.write(new Date().getFullYear())</script> Yuka Yanai. All Rights Reserved.</p>
-								<ul class="social-list list-horizontal pull-right clear-float-on-mobile right">
-									<li><a href="https://twitter.com/yuka_yanai" target="_blank"><span class="icon-twitter small"></span></a></li>
-									<li><a href="https://www.linkedin.com/in/yukayanai" target="_blank"><span class="icon-linkedin small"></span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- Footer End -->
+			{% include "_partials/footer.html" %}
 
 		</div>
 	</div>
-
-	<!-- Js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="../../js/timber.master.min.js"></script>
-	<script src="../../js/template-functions.js"></script>
-	<script src="../../js/jquery.tm.summit.min.js"></script>
-	<script type="text/javascript" src="js/jquery.tm.swipe.min.js"></script>
-	<script type="text/javascript" src="js/jquery.tm.avalanche.min.js"></script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118130028-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-118130028-1');
-	</script>
-
+	
+	{% include "_partials/js.html" %}	
+	<script src="/javascripts/lib/template-functions.js"></script>
+	<script src="/javascripts/lib/jquery.tm.summit.min.js"></script>
+	<script src="/javascripts/lib/jquery.tm.swipe.min.js"></script>
+	<script src="/javascripts/lib/jquery.tm.avalanche.min.js"></script>
+	{% include "_partials/ga.html" %}
 </body>
 </html>
