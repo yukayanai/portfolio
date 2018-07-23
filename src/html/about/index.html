@@ -57,7 +57,7 @@
 					</div>
 					<div class="row flex">
 						<div class="column width-8 offset-2 center">
-							<p class="lead weight-light">I'm Yuka, a UI / UX Designer based in Brisbane. I have been working as a designer in Sydney since 2010 after graduating from University of Technology, Sydney. I have recently moved to Brisbane to enjoy the sunshine!</p>
+							<p class="lead weight-light">I'm Yuka, a UI / UX Designer based in Brisbane. I have been working as a designer in Sydney since 2010 after graduating from University of Technology, Sydney. <br>I have recently moved to Brisbane to enjoy the sunshine!</p>
 						</div>
 						<div class="column width-12 center" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
 							<img src="/images/about/aboutme.png" alt="About me" />
@@ -66,42 +66,28 @@
 				</section>
 				<!-- Intro Section End -->
 
-				<!-- About Section -->
+				<!-- Skill Section -->
 				<section class="section-block replicable-content bkg-charcoal color-white">
-					<div class="row flex horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="1">
-						<div class="column width-4">
-							<h2 class="mb-30">Skills</h2>
-						</div>
-						<div class="column width-8">
-							<p>Photoshop</p>
-							<div class="progress-bar small pill">
-								<div class="bar bkg-red-light color-white horizon" style="width:90%;" data-animate-in="transX:-300;duration:1000ms;easing:swing;">
-									90%
-								</div>
+						<div class="row flex horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="1">
+							<div class="column width-4">
+								<h2 class="mb-30">Skills</h2>
 							</div>
-							<p>Illustrator</p>
-							<div class="progress-bar small pill">
-								<div class="bar bkg-red-light color-white horizon" style="width:90%;" data-animate-in="transX:-300;duration:1000ms;easing:swing;">
-									90%
-								</div>
-							</div>
-							<p>Sketch</p>
-							<div class="progress-bar small pill">
-								<div class="bar bkg-red-light color-white horizon" style="width:75%;" data-animate-in="transX:-300;duration:1000ms;easing:swing;">
-									75%
-								</div>
-							</div>
-							<p>HTML / CSS</p>
-							<div class="progress-bar small pill">
-								<div class="bar bkg-red-light color-white horizon" style="width:70%;" data-animate-in="transX:-300;duration:1000ms;easing:swing;">
-									70%
-								</div>
+							<div class="column width-8">
+								{% for skillItem in skills %}
+									<p>{{skillItem.skill}}</p>
+									<div class="progress-bar small pill">
+										<div class="bar bkg-red-light color-white horizon" style="width:{{skillItem.strength}};" data-animate-in="transX:-300;duration:1000ms;easing:swing;">
+											{{skillItem.strength}}
+										</div>
+									</div>
+								{% else %}
+								<!-- This would display if the collection were empty -->
+								<li></li>
+								{% endfor %}
 							</div>
 						</div>
-					</div>
-				</section>
-				<!-- About Section End -->
-
+					</section>
+				<!-- Skill Section End -->
 
 				<!-- Testimonial Section -->
 				<div class="section-block testimonial-5 testimonials-5-about-1">
