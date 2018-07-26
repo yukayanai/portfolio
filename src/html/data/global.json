@@ -10,7 +10,7 @@
     {"skill": "Photoshop",  "strength" : "90%"},
     {"skill": "Illustrator","strength" : "90%"},
     {"skill": "Sketch",     "strength" : "75%"},
-    {"skill": "HTML / CSS", "strength" : "70%"}
+    {"skill": "HTML / CSS", "strength" : "70%"}    
   ]
 }
 

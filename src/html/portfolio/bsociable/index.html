@@ -4,7 +4,7 @@
 	{% include "_partials/head.html" %}
 </head>
 
-<body class="bsociable">
+<body class="bsociable" data-module="portfolio">
 
 	{% include "_partials/menu_mobile.html" %}
 
@@ -16,38 +16,7 @@
 			<!-- Content -->
 			<div class="content clearfix">
 
-				<!-- Back Top -->
-				<div class="scroll-to-top">
-					<a href="#" class="icon-angle-up"></a>
-				</div>
-				<!-- Back Top End -->
-
-				<!-- Fullscreen Slider Section -->
-				<section class="section-block featured-media tm-slider-parallax-container">
-
-					<!-- Scroll Down -->
-					<div class="scroll-down">
-						<a href="#brief" class="scroll-link icon-angle-down"></a>
-					</div>
-					<!-- Scroll Down End -->
-
-					<div class="tm-slider-container full-width-slider fixed-height" data-parallax data-animation="slide" data-scale-under="1140" >
-						<ul class="tms-slides">
-							<li class="tms-slide" data-image data-force-fit>
-								<div class="tms-content">
-									<div class="tms-content-inner center">
-										<div class="row">
-											<div class="column width-12">
-											</div>
-										</div>
-									</div>
-								</div>
-								<img data-src="/images/portfolio/bsociable/feature-fs.jpg" data-retina alt=""/>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- Fullscreen Slider Section End -->
+				{% include "_partials/portfolio_slider.html" %}
 
 				<!-- Intro Section -->
 				<section id="brief" class="section-block">
