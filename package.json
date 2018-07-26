@@ -1,7 +1,7 @@
 {
-  "name": "blendid",
+  "name": "yukayanaiportfolio",
   "version": "1.0.0",
-  "description": "yukas page",
+  "description": "Yuka Yanai's portfolio site",
   "main": "index.js",
   "license": "MIT",
   "private": true,
