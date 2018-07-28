@@ -1,10 +1,11 @@
+{% from 'macros/portfolio_slider.html' import portfolioSlider %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	{% include "_partials/head.html" %}	
 </head>
 
-<body class="openspace" data-module="portfolio">
+<body class="openspace">
 
 	{% include "_partials/menu_mobile.html" %}
 
@@ -15,9 +16,9 @@
 
 			<!-- Content -->
 			<div class="content clearfix">
-
-				{% include "_partials/portfolio_slider.html" %}
-
+				
+				{{ portfolioSlider("openspace") }}
+				
 				<!-- Intro Section -->
 				<section id="brief" class="section-block">
 					<div class="row">
