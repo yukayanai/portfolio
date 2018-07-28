@@ -1,4 +1,4 @@
-{% from 'macros/portfolio_slider.html' import portfolioSlider %}
+{% from 'macros/portfolio.html' import portfolioSlider, pagination %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,18 +51,7 @@
 				</div>
 				<!-- Portfolio Grid Section End -->
 
-				<!-- Pagination Section -->
-				<div class="section-block pagination-3">
-					<div class="row">
-						<div class="column width-12">
-							<ul>
-								<li><a class="pagination-previous" href="../openspace/"><span class="icon-angle-left"></span></a></li>
-								<li><a class="pagination-next" href="../ebgames/"><span class="icon-angle-right"></span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- Pagination Section End -->
+				{{ pagination("openspace", "ebgames") }}
 
 			</div>
 			<!-- Content End -->
@@ -72,11 +61,7 @@
 		</div>
 	</div>
 
-	{% include "_partials/js.html" %}
-	<script src="/javascripts/lib/template-functions.js"></script>
-	<script src="/javascripts/lib/jquery.tm.summit.min.js"></script>
-	<script src="/javascripts/lib/jquery.tm.swipe.min.js"></script>
-	<script src="/javascripts/lib/jquery.tm.avalanche.min.js"></script>
+	{% include "_partials/js_portfolio.html" %}
 	{% include "_partials/ga.html" %}
 
 </body>

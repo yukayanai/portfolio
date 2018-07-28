@@ -32,3 +32,18 @@
 </section>
 <!-- Fullscreen Slider Section End -->
 {% endmacro %}
+
+{% macro pagination(previous, next) %}
+<!-- Pagination Section -->
+<div class="section-block pagination-3">
+	<div class="row">
+		<div class="column width-12">
+			<ul>
+				<li><a class="pagination-previous" href="../{{previous}}/"><span class="icon-angle-left"></span></a></li>
+				<li><a class="pagination-next" href="../{{next}}/"><span class="icon-angle-right"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Pagination Section End -->
+{% endmacro %}
