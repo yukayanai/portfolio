@@ -41,6 +41,19 @@ Creates versioned and optimized files in public folder.
 yarn run blendid -- build
 ```
 
+**Serve prod code (public folder) on localhost**
+
+_First time_
+```
+cd public
+python3  -m http.server 1337
+```
+
+_Afterwards_
+```
+cd ../ && cd public && python3 -m http.server 1337
+```
+
 
 **Going live**
 
