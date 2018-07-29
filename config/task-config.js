@@ -25,5 +25,12 @@ module.exports = {
 
   production: {
     rev: true
+  },
+
+  html: {
+    htmlmin: {
+      removeComments: true
+    }
   }
+
 }
