@@ -61,3 +61,14 @@ The below will run production build then pushes /public folder content to the re
 ```
 yarn run blendid -- gh-pages
 ```
+
+Check below if commiter = null issues arise when running gh-pages task:
+
+```
+https://github.com/shinnn/gulp-gh-pages/issues/116#issuecomment-342982109
+
+cd node_modules/gulp-gh-pages/
+npm install --save gift@0.10.2
+cd ../../
+gulp deploy
+``` 
