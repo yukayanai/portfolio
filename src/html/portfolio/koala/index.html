@@ -1,0 +1,96 @@
+{% from 'macros/portfolio.html' import slider, pagination %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}	
+</head>
+
+<body class="koala">
+
+		<div class="wrapper reveal-side-navigation">
+			<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+
+			<!-- Content -->
+			<div class="content clearfix">
+				
+				{{ slider("koala") }}
+				
+				<section id="brief" class="section-block">
+					<div class="row">
+						<div class="column width-10 offset-1 center horizon mb-20" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+							<h1 data-animate-in="preset:scaleOut;duration:1000ms;" class="tm-caption mb-30">Interactive Koala Map</h1>
+						</div>
+						<div class="column width-10 offset-1 center mb-100">
+							<p class="lead weight-light">How might we provide an interactive way to view detected organisms using AI?</p>
+							<p class="unsplash-att">Header photo by <a href="https://unsplash.com/@_jsphprz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Joseph Pérez</a> on <a href="https://unsplash.com/s/photos/koala?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+						</div>
+						<div class="column width-8 offset-2 left mb-10">
+							<h2>Background</h2>
+							<p>The requirement for this project was to create an easy-to-use interactive map which shows the location of koalas detected using thermal imaging in a given area at different points in time. The interactive map is a way for visitors to the Quantitative Applied Spatial Ecology Group (QASE) to view the work done by the group to detect specific organisms (in this case, Koalas) using UAVs and artificial intelligence.  The interactive map is required as part of State Government grant outcomes and will serve as part of a future ARC Linkage proposal with Lone Pine Koala Sanctuary.</p>
+						</div>
+						<div class="column width-8 offset-2 left mb-60">
+							<p class="role"><strong>Role:</strong> UX Designer
+							<br /><strong>Methods and Tools:</strong> Usability Testing, Wireframing, Prototyping, Adobe XD, Adobe Illustrator
+							<br /><strong>Team members:</strong> Stakeholder, Product Owner, a Scrum Master, a Business Analyst, and 3 Developers.</p>		
+						</div>
+						<div class="column width-8 offset-2 left mb-60">
+							<h2>Goals</h2>
+							<ul>
+								<li>Highlights the research done by QUT in environmental research, attracting PhD students and serving as part of a future ARC Linkage proposal with Lone Pine Koala Sanctuary.</li>
+								<li>Accurately represent the number of koalas detected at different points in time and allow for trend estimation for koala abundance in a given area.</li>
+							</ul>
+						</div>
+						<div class="column width-8 offset-2 left mb-40">
+							<h2>Wireframing</h2>
+							<p>Once we met with the Stakeholder to gather requirements, I mocked up a few wireframes to create an interactive prototype. Discussing with the Developers the technical capabilities, we had a number of iterations to work through some of the complex interactions.</p>
+						</div>
+						<div class="column width-12 center">
+							<img class="center" src="/images/portfolio/koala/wireframes.jpg" alt="Koala interactive map wireframes"/>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-block bkg-grey-ultralight">
+					<div class="row">
+						<div class="column width-8 offset-2 left mb-40">
+							<h2>Design Iterations</h2>
+							<p>A number of design iterations and working with the limitation of data, I have revised the mock up design.</p>
+						</div>
+						<div class="column width-12 center">
+								<img class="center" src="/images/portfolio/koala/ideation.png" alt="Koala interactive map UI mock up"/>
+						</div>
+					</div>
+				</div>
+
+				<section id="brief" class="section-block">
+					<div class="row">
+						<div class="column width-8 offset-2 left mb-20">
+							<h2>Outcome</h2>
+						</div>
+						<div class="column width-8 offset-2 center mb-60">
+							<img class="center" src="/images/portfolio/koala/outcome.jpg" alt="Final koala interactive map mock up"/>
+						</div>
+						<div class="column width-8 offset-2 left mb-20">
+							<p class="mb-50">We successfully implemented and released the interactive map to the Quantitative Applied Spatial Ecology Group site. This was our final design.</p>
+							<p><a class="action" href="https://research.qut.edu.au/qase/interactive-koala-map/" target="_blank">View Koala Map</a></p>
+						</div>
+					</div>
+				</section>
+
+				{{ pagination("hdr", "qutex") }}
+
+			</div>
+			<!-- Content End -->
+
+			{% include "_partials/footer.html" %}
+
+		</div>
+	</div>
+
+	{% include "_partials/js.html" %}
+	{% include "_partials/ga.html" %}
+	
+</body>
+</html>

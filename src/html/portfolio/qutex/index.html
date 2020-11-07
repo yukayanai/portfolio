@@ -1,0 +1,161 @@
+{% from 'macros/portfolio.html' import slider, pagination %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include "_partials/head.html" %}	
+</head>
+
+<body class="qutex">
+
+		<div class="wrapper reveal-side-navigation">
+			<div class="wrapper-inner">
+
+			{% include "_partials/header.html" %}
+
+			<!-- Content -->
+			<div class="content clearfix">
+				
+				{{ slider("qutex") }}
+				
+				<!-- Intro Section -->
+				<section id="brief" class="section-block">
+					<div class="row">
+						<div class="column width-10 offset-1 center horizon mb-20" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+							<h1 data-animate-in="preset:scaleOut;duration:1000ms;" class="tm-caption mb-30">Professional and Executive Education</h1>
+						</div>
+						<div class="column width-10 offset-1 center mb-100">
+							<p class="lead weight-light">Rethinking the Professional and Executive Education site to accommodate the growing content and improving the engagement and navigation on the site.</p>
+							<p class="unsplash-att">Header photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Priscilla Du Preez</a> on <a href="https://unsplash.com/s/photos/professional-course?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+						</div>
+						<div class="column width-8 offset-2 left mb-10">
+							<h2>Background</h2>
+							<p>The Professional and Executive Education offers a number of online and on campus courses in QUT.</p>
+						</div>
+						<div class="column width-8 offset-2 left mb-60">
+							<p class="role"><strong>Role:</strong> UX Designer
+							<br /><strong>Methods and Tools:</strong> User Interview, Optimal Workshop, Competitive Analysis, Current State Analysis, Mind Mapping, Miro Board, Wireframing, Prototyping, Adobe XD
+							<br /><strong>Team members:</strong> 2 Product Owners, and a Developer.</p>		
+						</div>
+						<div class="column width-8 offset-2 left mb-60">
+							<h2>Current State Analysis</h2>
+							<p>The first step for this project was to analyse my findings of the current site. I did a thorough review of the site including accessibility review, user interview, competitive analysis, survey, looking at data on Google Analytics and HotJar. All of my findings were put together on Miro Board as it was easy to put together all my findings in one page. This was presented to the Product Owners.</p>
+						</div>
+						<div class="column width-12 center">
+							<img class="center" src="/images/portfolio/qutex/analysis.jpg" alt="Current state analysis work on Miro board"/>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-block bkg-grey-ultralight">
+					<div class="row">
+						<div class="column width-8 offset-2 left">
+							<h2>Competitive Analysis</h2>
+							<p>I looked at other university sites locally in Australia and overseas. We found that most of the other universities have a site dedicated for their professional education offerings separate from the university courses.</p>
+							<p>Some of the key findings from the competitors were:</p>
+							<ul>
+								<li>Ability to browse and explore courses in multiple ways. For example, not only having the course area but having the type of course such as online short courses, workshops, micro credentials etc.</li>
+								<li>Have a clear layout and key information of a course easily accessible at the top of the page.</li>
+								<li>Filters are visible on the side of the page where users can select multiple options and can see the filtered courses on the right.</li>
+								<li>Ability to filter by delivery method, cost, date and sorting options allows users to explore the different courses in multiple ways.</li>
+								<li>Having the different session times and the associated call to action buttons for each session separately, which allows less steps for a user to take through the enrolment process.</li>
+								<li>If the intake session has finished, it clearly says 'Finished' and if there are no sessions available to enrol, there is a waitlist for interested candidates.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-block">
+					<div class="row">
+						<div class="column width-8 offset-2 left">
+							<h2>Survey</h2>
+							<p>We sent a survey to a group of 1000 past course participants to invite them to complete a survey to win 1 of 5 $50 Visa gift cards. There were 73 respondents who had completed the survey. Over 60% of those respondents were not QUT staff or students.</p>
+							<p>From this survey these were some of the key findings and area of improvements:</p>
+							<h3>Navigation</h3>
+							<ul>
+								<li>Some users found difficulty in finding information and navigating throughout the site.</li>
+								<li>Reducing the number of clicks for users to find information can be improved by simplified site structure and improved navigation. This could also help users when they are navigating between different courses. Distinguishing the different courses QUT offers would also be helpful for users.</li>
+							</ul>
+							<h3>Content</h3>
+							<ul>
+								<li>There were a few comments from the survey where they have liked more detailed information about the course, the methodology, contact person.</li>
+								<li>There was also a comment about courses kept being changed / cancelled / postponed and the website did not reflect the changes.</li>
+								<li>Adding testimonials for each course instead of QUTeX as a whole might help the decision making for users to enrol.</li>
+								<li>Providing more information about the pre requisites and career level for each course might also improve the user experience instead of trying to contact the QUTeX. There were a few comments about ideally making contact easier for users.</li>
+							</ul>
+							<h3>Payment</h3>
+							<ul>
+								<li>25% of survey respondents payment and enrolments were handled by their organisation HR/Finance department so respondents didn't have first hand experience.</li>
+								<li>10% of the survey respondents have commented about lack of payment options and inability to generate an invoice.</li>
+							</ul>
+							<h3>Corporate organisations</h3>
+							<ul>
+								<li>There were some great comments about having a real life experience was taken very positively.</li>
+								<li>However, some organisations with subscription based had a few comments about repetitive courses that have already been attended by their staff, some sessions were too long, and ran over.</li>
+							</ul>
+							<h3>Learning experiences</h3>
+							<ul>
+								<li>Most users had a great facilitator and guest speakers, quality of course were taken positively.</li>
+								<li>Some areas of improvements are perhaps having different content for self paced / online learning, and providing different ways for the social interactions within the sessions.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<section id="brief" class="section-block bkg-grey-ultralight">
+					<div class="row">
+						<div class="column width-8 offset-2 left mb-20">
+							<h2>Navigation Design</h2>
+							<p>Previously, the navigation looked like this. This is the sub navigation for QUTeX.</p>
+						</div>
+						<div class="column width-12 center mb-60">
+							<img class="center" src="/images/portfolio/qutex/navigation.jpg" alt="Previous navigation screenshot"/>
+						</div>
+						<div class="column width-8 offset-2 left mb-20">
+							<p>The problem with the previous navigation was that there was no connection between the branding 'QUTeX' and 'Professional and executive education'. Not all high level pages in QUTeX are accessible via the navigation, and it's not uncommon that sections like 'courses by area' fall out of sync as the QUTeX proposition evolves.</p>
+							<p class="mb-50">After a number of design iterations, we launched the new menu navigation for QUTeX. This was our final design.</p>
+						</div>
+						<div class="column width-12 center">
+							<img class="center" src="/images/portfolio/qutex/design-outcome.png" alt="Final navigation design mock up"/>
+						</div>
+					</div>
+				</section>
+
+				<section id="brief" class="section-block">
+					<div class="row">
+						<div class="column width-8 offset-2 left mb-20">
+							<h2>Contact Form Design</h2>
+							<p>Previously, there were multiple point of contact and forms that looked like this. There were multiple contact options and was on the bottom of the every QUTeX page which was not easily accessible.</p>
+						</div>
+						<div class="column width-8 offset-2 center mb-60">
+							<img class="photo-shadow" src="/images/portfolio/qutex/contact.png" alt=""/>
+						</div>
+						<div class="column width-8 offset-2 left mb-20">
+							<p class="mb-50">After a number of design iterations, we consolidated the contact point into a modal button that will always display on QUTeX pages. We also created a new contact form and the final design looks like this.</p>
+						</div>
+						<div class="column width-12 center mb-60">
+							<img src="/images/portfolio/qutex/contact-outcome.png" alt=""/>
+						</div>
+						<div class="column width-8 offset-2 left mb-40">
+							<p>This project is still ongoing and I am currently working on redesigning the landing pages and possibly introducing a secondary navigation. We are still at the ideation stage, and this is our sneak peak.</p>
+						</div>
+						<div class="column width-12 center">
+							<img src="/images/portfolio/qutex/ideation.png" alt=""/>
+						</div>
+					</div>
+				</section>
+
+				{{ pagination("koala", "wcag") }}
+
+			</div>
+			<!-- Content End -->
+
+			{% include "_partials/footer.html" %}
+
+		</div>
+	</div>
+
+	{% include "_partials/js.html" %}
+	{% include "_partials/ga.html" %}
+	
+</body>
+</html>
