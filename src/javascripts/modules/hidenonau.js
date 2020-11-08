@@ -14,6 +14,11 @@
 export default class HideNonAu {
 
   constructor(el) {
+
+    // window.addEventListener('DOMContentLoaded', (event) => {
+    //   console.log('DOM fully loaded and parsed');
+    //  });
+
     if (location.port !== "3000") {
       this.showElementsByApi(el, this.showNonAuElements);
     } else {
@@ -28,22 +33,23 @@ export default class HideNonAu {
     for (let i = 0; i < nonaAuElements.length; i++) { 
       nonaAuElements[i].style.display = 'block';
     }
+    window.dispatchEvent(new Event('resize'));
   }
 
   showElementsByApi(el, f){
     $.ajax({
-      url: "http://ip-api.com/json",
+      url: "https://api.ipdata.co?api-key=201b111f88723766555519cc6d26d7be7c253fa8931e14040947f7d8",
       type: 'GET',
       success: function(json){
         if (location.port == "3000") {
-          console.log("Request country: " + json.country);
+          console.log("Request country: " + json.country_name);
         }
-        if (json.country !== "Australia") {
+        if (json.country_name !== "Australia") {
           f(el);
         }
       },
       error: function(err){
-        console.log("Request failed, error= " + err);
+        console.log("Request failed, error= ", err);
       }
     });
   }
