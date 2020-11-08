@@ -8,7 +8,6 @@
  * 
  * To show/hide element based on location, add nonau class to div and set style="display: none;" on the element.
  * 
- * 
  */
 
 export default class HideNonAu {
@@ -18,9 +17,18 @@ export default class HideNonAu {
     // window.addEventListener('DOMContentLoaded', (event) => {
     //   console.log('DOM fully loaded and parsed');
     //  });
+    if (location.search.includes("clearcountry")) {
+      this.deleteCountry();
+    }
+
+    let country = this.readCountry();
 
     if (location.port !== "3000") {
-      this.showElementsByApi(el, this.showNonAuElements);
+      if (!country) {
+        this.showElementsByApi(el, this.showNonAuElements);
+      } else if (country !== "Australia") {
+        this.showNonAuElements(el);
+      }
     } else {
       if (!location.search.includes("hideau")) {
         this.showNonAuElements(el);
@@ -30,13 +38,14 @@ export default class HideNonAu {
 
   showNonAuElements(el) {
     const nonaAuElements = el.querySelectorAll('.nonau');
-    for (let i = 0; i < nonaAuElements.length; i++) { 
+    for (let i = 0; i < nonaAuElements.length; i++) {
       nonaAuElements[i].style.display = 'block';
     }
     window.dispatchEvent(new Event('resize'));
   }
 
   showElementsByApi(el, f){
+    const sc = this.saveCountry;
     $.ajax({
       url: "https://api.ipdata.co?api-key=201b111f88723766555519cc6d26d7be7c253fa8931e14040947f7d8",
       type: 'GET',
@@ -44,6 +53,7 @@ export default class HideNonAu {
         if (location.port == "3000") {
           console.log("Request country: " + json.country_name);
         }
+        sc(json.country_name);
         if (json.country_name !== "Australia") {
           f(el);
         }
@@ -53,4 +63,23 @@ export default class HideNonAu {
       }
     });
   }
+
+  saveCountry(country) {
+    if (typeof(Storage) !== "undefined") {
+      localStorage.country = country;
+    }
+  }
+
+  readCountry() {
+    if (typeof(Storage) !== "undefined") {
+      return localStorage.country;
+    }
+  }
+
+  deleteCountry(country) {
+    if (typeof(Storage) !== "undefined") {
+      localStorage.removeItem("country");
+    }
+  }
+
 }

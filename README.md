@@ -74,3 +74,13 @@ npm install --save gift@0.10.2
 cd ../../
 gulp deploy
 ``` 
+
+**Check locally what would look live site from Au**
+
+http://localhost:3000/index.html?hideau
+
+
+**Delete country**
+
+The page saves current country it was visited from in localstorage.
+To remove it, call http://localhost:3000/index.html?clearcountry
