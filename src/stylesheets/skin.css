@@ -175,6 +175,10 @@ a:focus {
 	outline: 2px dashed #4a7065;
 	outline-offset: 0.25rem;
 }
+.overlay-link:focus {
+	outline: 2px dashed #4a7065;
+	outline-offset: 0.1rem;
+}
 p.unsplash-att {
 	font-size: 1.4rem;
 }
