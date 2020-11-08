@@ -12,6 +12,8 @@ cd portfolio
 yarn install
 ```
 
+Requires node 8
+
 ## Making changes
 
 **Go to project folder then checkout new branch**
