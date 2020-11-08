@@ -401,14 +401,17 @@ h4.project-title{
 	}
 	h1,
 	.title-xlarge {
-		font-size: 5rem !important;
+		font-size: 3.8rem !important;
+		line-height: 4.2rem;
+		letter-spacing: 0.02em;
 	}
+
 	.title-medium {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	h2,
 	.title-large{
-		font-size: 2.8rem;
+		font-size: 3.2rem;
 	}
 	h3 {
 		font-size: 1.8rem;
@@ -469,6 +472,29 @@ h4.project-title{
 	.fullscreen-section .background-on-mobile h5,
 	.fullscreen-section .background-on-mobile h6{
 		color: #000 !important;
+	}
+
+	.mb-60 {
+		margin-bottom: 4rem;
+	}
+
+	.mb-40 {
+		margin-bottom: 2rem;
+	}
+
+	.section-block.replicable-content, .row.xlarge.replicable-content, .bkg-charcoal, .bkg-grey-ultralight, .section-block, .fullscreen-section .fullscreen-inner, .pagination-2 .pagination-next, .row.xlarge {
+		padding-top: 6rem !important;
+		padding-bottom: 6rem !important;
+	}
+
+	.featured-media {
+		padding-top: 0 !important;
+	}
+
+	.grid-filter-menu ul, .grid-filter-menu li {
+		font-size: 1.4rem !important;
+		letter-spacing: 0.04rem !important;
+		margin-left: 0;
 	}
 }
 
@@ -681,8 +707,6 @@ body,
 [class*="intro-title-"] + .section-block,
 .featured-media + .section-block{
 	padding-top: 8rem;
-	border-top-width: 3rem;
-	border-top-style: solid;
 }
 .section-block,
 .fullscreen-section .fullscreen-inner,
