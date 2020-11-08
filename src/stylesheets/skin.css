@@ -950,6 +950,28 @@ body,
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 926px) /*12pro max*/
+{
+	.mobile .header .logo-inner{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.mobile .header .logo a{
+		position: relative;
+	}
+	.mobile .header .logo a:first-child{
+		display: none !important;
+	}
+	.mobile .header .logo a:last-child{
+		opacity: 1;
+    visibility: visible !important;
+    display: block !important;
+	}
+}
+
 @media only screen and (max-width: 960px){
 	.header .logo-inner{
 		display: table-cell;
@@ -963,7 +985,7 @@ body,
 	}
 	.header .logo a:last-child{
 		opacity: 1;
-		visibility: visible !important;
+    visibility: visible !important;
 	}
 }
 
