@@ -176,11 +176,13 @@ a:focus {
 	outline-offset: 0.25rem;
 }
 .overlay-link:focus {
-	outline: 2px dashed #4a7065;
-	outline-offset: 0.1rem;
+	border: 2px dashed #4a7065;
 }
 p.unsplash-att {
 	font-size: 1.4rem;
+}
+.header-transparent .logo a:focus {
+	border: 2px solid #FFFFFF;
 }
 #skip-link {
 	display: block;
@@ -927,10 +929,16 @@ body,
 	width: 10rem;
 	padding: 0.5rem 0.8rem;
 }
+.header .logo a:first-child:focus {
+	width: 10.2rem;
+}
 .header .logo a:last-child{
 	opacity: 0;
 	width: 4.4rem;
 	visibility: hidden;
+}
+.header .logo a:last-child:focus {
+	width: 4.7rem;
 }
 .header .header-inner .logo a:hover {
 	opacity: 1 !important;
@@ -983,9 +991,9 @@ body,
 }
 .header.header-background .logo a:first-child,
 .header.header-background .logo a:last-child{
-	-webkit-transform: translateX(-10rem);
-	-ms-transform: translateX(-10rem);
-	transform: translateX(-10rem);
+	-webkit-transform: translateX(-9rem);
+	-ms-transform: translateX(-9rem);
+	transform: translateX(-9rem);
 	visibility: visible;
 	background-color: #4a7065;
 }
