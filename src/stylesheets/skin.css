@@ -102,6 +102,11 @@ p.role {
 	padding: 2.5rem;
 }
 
+p.caption {
+	font-size: 1.4rem;
+	color: #555555;
+}
+
 /* Links */
 a, 
 p a,
