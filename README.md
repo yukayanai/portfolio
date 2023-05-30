@@ -6,6 +6,27 @@ Portfolio website
 
 **Clone repository**
 
+This project requires node8 which is not supported on M1.
+
+Make sure Terminal is running in rosetta
+- go to Application (-> utilities)
+- right click on terminal app
+- get Info
+- Select "Open using Rosetta" 
+- Restart Terminal if it's running
+
+The above steps need to be done once.
+
+Start terminal
+
+Type below to get zsh running in rosetta
+```
+arch -x86_64 zsh 
+export PATH=/Users/yukayanai/.local/share/rtx/installs/node/8.17.0/bin:$PATH
+```
+
+Clone repo
+
 ```
 git clone https://github.com/yukayanai/portfolio.git
 cd portfolio
