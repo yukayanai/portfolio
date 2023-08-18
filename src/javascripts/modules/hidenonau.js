@@ -14,26 +14,31 @@ export default class HideNonAu {
 
   constructor(el) {
 
-    // window.addEventListener('DOMContentLoaded', (event) => {
-    //   console.log('DOM fully loaded and parsed');
-    //  });
-    if (location.search.includes("clearcountry")) {
-      this.deleteCountry();
-    }
+  // always show everything
+  this.showNonAuElements(el);
 
-    let country = this.readCountry();
 
-    if (location.port !== "3000") {
-      if (!country) {
-        this.showElementsByApi(el, this.showNonAuElements);
-      } else if (country !== "Australia") {
-        this.showNonAuElements(el);
-      }
-    } else {
-      if (!location.search.includes("hideau")) {
-        this.showNonAuElements(el);
-      }
-    }
+    // // window.addEventListener('DOMContentLoaded', (event) => {
+    // //  console.log('DOM fully loaded and parsed');
+    // //});
+
+    // if (location.search.includes("clearcountry")) {
+    //   this.deleteCountry();
+    // }
+
+
+    // let country = this.readCountry();
+    // if (location.port !== "3000") {
+    //   if (!country) {
+    //     this.showElementsByApi(el, this.showNonAuElements);
+    //   } else if (country !== "Australia") {
+    //     this.showNonAuElements(el);
+    //   }
+    // } else {
+    //   if (!location.search.includes("hideau")) {
+    //     this.showNonAuElements(el);
+    //   }
+    // }
   }
 
   showNonAuElements(el) {
