@@ -389,6 +389,7 @@ h4.project-title{
 }
 .title-medium{
 	font-size: 2.5rem;
+	letter-spacing: 0.02em;
 }
 .tms-caption.scale.title-medium,
 .tmp-content .title-medium{
@@ -440,7 +441,7 @@ h4.project-title{
 	h1,
 	.title-xlarge {
 		font-size: 3.8rem !important;
-		line-height: 4.2rem;
+		line-height: 4.4rem;
 		letter-spacing: 0.02em;
 	}
 
@@ -450,6 +451,8 @@ h4.project-title{
 	h2,
 	.title-large{
 		font-size: 3.2rem;
+		line-height: 3.8rem;
+		letter-spacing: 0.02em;
 	}
 	h3 {
 		font-size: 1.8rem;
